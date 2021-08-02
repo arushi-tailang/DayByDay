@@ -4,15 +4,16 @@ const dotenv = require("dotenv"); //importing
 const connectDB = require("./config/db");
 const userRoutes = require("./Routes/UserRoutes");
 const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
+const noteRoutes = require("./Routes/NoteRoutes");
 
 const app = express();
 dotenv.config();
 connectDB();
 app.use(express.json()); //you have to do it everytime whenever you accept json data
 
-// app.get("/", (req, res) => {
-//   res.send("API is working...");
-// });
+app.get("/", (req, res) => {
+  res.send("API is working...");
+});
 
 // app.get("/api/notes", (req, res) => {
 //   res.json(notes);
@@ -24,6 +25,7 @@ app.get("/api/notes/:id", (req, res) => {
 });
 
 app.use("/api/users", userRoutes);
+app.use("/api/notes", noteRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

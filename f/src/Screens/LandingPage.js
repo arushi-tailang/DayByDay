@@ -3,6 +3,13 @@ import React from "react";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  // useEffect(() => {
+  //   const userInfo = localStorage.getItem("userInfo");
+  //   if (userInfo) {
+  //     history.push("/mynotes");
+  //   }
+  // }, [history]);
+
   return (
     <div className="main">
       <Container>
@@ -18,7 +25,7 @@ const LandingPage = () => {
                   Login
                 </Button>
               </a>
-              <a href="/login">
+              <a href="/register">
                 <Button
                   size="lg"
                   className="landingbutton"
