@@ -10,8 +10,9 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
 import { logout } from "./actions/userActions";
+import "./Header.css";
 
-const Header = () => {
+const Header = ({ setSearch }) => {
   const history = useHistory();
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);
@@ -25,7 +26,7 @@ const Header = () => {
   useEffect(() => {}, [userInfo]);
   return (
     <div>
-      <Navbar bg="primary" expand="lg" variant="dark">
+      <Navbar className="navbar-dark" expand="lg" variant="dark">
         <Container>
           <Navbar.Brand>
             <Link to="/"> Day By Day </Link>
@@ -39,22 +40,37 @@ const Header = () => {
                   placeholder="Search"
                   className="mr-sm-2"
                   aria-label="Search"
+                  onChange={(e) => setSearch(e.target.value)}
                 />
               </Form>
-              <Nav />
-              <Nav.Link href="/mynotes">
-                <Link to="/mynotes">My Notes</Link>
-              </Nav.Link>
-
-              <NavDropdown title="Arushi Tailang" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">My Profile</NavDropdown.Item>
-
-                <NavDropdown.Divider />
-                <NavDropdown.Item onClick={logoutHandler}>
-                  Logout
-                </NavDropdown.Item>
-              </NavDropdown>
             </Nav>
+            {userInfo ? (
+              <Nav>
+                <Nav.Link href="/mynotes">
+                  <Link to="/mynotes">My Notes</Link>
+                </Nav.Link>
+
+                <NavDropdown
+                  title={userInfo?.name}
+                  id="navbarScrollingDropdown"
+                >
+                  <NavDropdown.Item href="/profile">
+                    My Profile
+                  </NavDropdown.Item>
+
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item onClick={logoutHandler}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            ) : (
+              <Nav>
+                <Nav.Link href="/mynotes">
+                  <Link to="/login">Login</Link>
+                </Nav.Link>
+              </Nav>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>

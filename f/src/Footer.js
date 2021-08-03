@@ -10,11 +10,16 @@ const Footer = () => {
         bottom: 0,
         display: "flex",
         justifyContent: "center",
+        backgroundColor: " black",
+        color: "white",
       }}
     >
       <Container>
         <Row>
-          <Col className="text-center py-3">Copyright &copy; Day By Day</Col>
+          <Col className="text-center py-3">
+            Copyright &copy;{" "}
+            <a href="https://github.com/arushi-tailang">Day By Day</a>
+          </Col>
         </Row>
       </Container>
     </footer>

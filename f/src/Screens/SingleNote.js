@@ -107,7 +107,11 @@ function SingleNote({ match, history }) {
               />
             </Form.Group>
             {loading && <Loading size={50} />}
-            <Button variant="primary" type="submit">
+            <Button
+              variant="primary"
+              type="submit"
+              style={{ backgroundColor: "black" }}
+            >
               Update Note
             </Button>
             <Button
@@ -120,7 +124,9 @@ function SingleNote({ match, history }) {
           </Form>
         </Card.Body>
 
-        <Card.Footer className="text-muted">Updated on - </Card.Footer>
+        <Card.Footer className="text-muted">
+          Updated on -{new Date().toLocaleDateString()}{" "}
+        </Card.Footer>
       </Card>
     </MainScreen>
   );

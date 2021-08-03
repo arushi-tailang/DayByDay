@@ -127,7 +127,11 @@ function RegisterPage({ history }) {
               custom
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
+          <Button
+            variant="primary"
+            type="submit"
+            style={{ backgroundColor: "black" }}
+          >
             Register
           </Button>
         </Form>
