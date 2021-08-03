@@ -7,7 +7,7 @@
     <br />
     </p>
 </p>
-
+<br />
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -38,16 +38,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
   
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Day By Day is a note-taking application with multiple functionalities for better interaction.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+This project contains CRUD API operations where users can customize their notes, user profiles with their profile pictures. Also, use the Cloudinary platform to store user's profile pictures in the database.
+For user authorization, I implemented the use of JWT (JSON Web Token) to store info in the MongoDB database. User's passwords are secured as I used the Bcrypt function to encrypt the password.
+Redux is used for state management of this application.
   
   ### Landing:
 ![Screenshot from 2021-08-03 20-53-20](https://user-images.githubusercontent.com/75250092/128045616-6bea321f-39bd-4ff1-8032-5ec2aac8a96f.png)
@@ -64,13 +59,18 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ![Screenshot from 2021-08-03 21-02-43](https://user-images.githubusercontent.com/75250092/128049502-1e254ded-4cd7-49c6-a489-4cc18f51f6ac.png)
 
 
+## Technologies Used:
 
-### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+- JavaScript
+- ReactJS
+- NodeJS
+- ExpressJS
+- MongoDB
+- JWT
+- Redux
+- Password Bcrypt
+- Cloudinary
+- Nodemon
 
 
 
@@ -106,36 +106,7 @@ This is an example of how to list things you need to use the software and how to
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
@@ -145,7 +116,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Arushi Tailang - [@your_linkedIn](https://www.linkedin.com/in/arushi-tailang-1a23001b0/) - arushitailang2001@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
