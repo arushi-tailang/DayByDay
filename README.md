@@ -44,10 +44,16 @@ A list of commonly used resources that I find helpful are listed in the acknowle
   ### Landing:
 ![Screenshot from 2021-08-03 20-53-20](https://user-images.githubusercontent.com/75250092/128045616-6bea321f-39bd-4ff1-8032-5ec2aac8a96f.png)
 ### Register:
+![Screenshot from 2021-08-03 20-54-38](https://user-images.githubusercontent.com/75250092/128048462-848f9e5c-8519-4755-9709-1cd2c47cec13.png)
 ### Notes:
+![Screenshot from 2021-08-03 21-01-43](https://user-images.githubusercontent.com/75250092/128048610-9fe5eea7-239b-4dcb-9576-b7c7ce3fa135.png)
 ### Create New Note:
+![Screenshot from 2021-08-03 20-55-39](https://user-images.githubusercontent.com/75250092/128049279-979492fc-6fce-4cae-8e0d-10dad0aca0cd.png)
 ### Edit Note:
+![Screenshot from 2021-08-03 21-02-16](https://user-images.githubusercontent.com/75250092/128049401-f6868e3c-87c7-45d3-94ec-5bf7dd852628.png)
+
 ### My Profile:
+![Screenshot from 2021-08-03 21-02-43](https://user-images.githubusercontent.com/75250092/128049502-1e254ded-4cd7-49c6-a489-4cc18f51f6ac.png)
 
 
 
